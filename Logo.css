@@ -1,0 +1,52 @@
+.logo-icon {
+    display: flex;
+}
+
+.logo-icon img {
+    transform: translateZ(20px);
+}
+
+.logo{
+    margin-top: 10px;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+}
+
+.tilt-inner {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(
+        rgb(126, 78, 126), 
+        rgb(74, 29, 103)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+
+.tilt{
+    transform-style: preserve-3d;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    border: 2px solid lightblue;
+    z-index: 1;
+    animation: updown infinite 6s;
+}
+
+@keyframes updown{
+    from {top:0;}
+    50% {top:100%}
+    to {top:0%}
+}
+
+.credits {
+    display: flex;
+    font-size: .6em;
+    width: 100px;
+    text-align: justify;
+}
